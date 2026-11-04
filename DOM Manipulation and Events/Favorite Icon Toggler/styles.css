@@ -1,0 +1,36 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul { list-style: none }
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.item-link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    line-height: 3rem;
+}
+
+.favorite-icon {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.filled {
+    color: red;
+}
