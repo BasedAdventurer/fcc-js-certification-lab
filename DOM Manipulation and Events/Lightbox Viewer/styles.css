@@ -1,0 +1,58 @@
+[hidden] {
+    display: none !important;
+}
+
+body h1 {
+    background-color: hsl(194, 17%, 85%);
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, 0.377);
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox-image {
+    max-width: 1000px;
+    height: auto;
+}
+
+#close-btn {
+    align-self: flex-end;
+    font-size: 5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
