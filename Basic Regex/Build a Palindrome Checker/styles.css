@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-abyss: hsl(222, 38%, 8%);
+    --bg-surface: hsl(217, 33%, 17%);
+    --accent-cyan: hsl(189, 94%, 43%);
+    --accent-indigo: hsl(239, 84%, 67%);
+    --text-main: hsl(210, 40%, 98%);
+
+    /* Bonus: Easy hover states using HSL lightness adjustments */
+    --accent-cyan-hover: hsl(189, 94%, 50%);
+    --accent-indigo-hover: hsl(239, 84%, 74%);
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    min-height: 100vh;
+    background-color: var(--bg-abyss);
+    color: var(--text-main);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-block-start: 15rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.container {
+    background-color: var(--bg-surface);
+    border-radius: 10px;
+
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    width: 75vw;
+
+    & span {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#text-input {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--accent-indigo);
+    color: var(--text-main);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#check-btn {
+    background-color: var(--accent-indigo);
+    color: var(--text-main);
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--accent-indigo-hover);
+    }
+}
+
+#result {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.info-container {
+    background-color: var(--bg-surface);
+    border-radius: 10px;
+
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    width: 75vw;
+
+    font-size: 1.5rem;
+}
+
+.result-text {
+    font-weight: 700;
+}
